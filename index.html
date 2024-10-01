@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-</head>
-<body>
-    <div class="div" style="display: flex; justify-content: center;">
-        <img src="LOGO.png" style="height: 90px;" alt="logo">
-        <h1 style="display: flex;justify-content: center;">Currency Converter</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="div" style="display: flex; justify-content: center">
+      <img src="LOGO.png" style="height: 90px" alt="logo" />
+      <h1 style="display: flex; justify-content: center">Currency Converter</h1>
     </div>
-   
+
     <form>
-    <div class="container">
+      <div class="container">
         <div class="amt">
-            <label for="currency">Enter Amount in USD</label>
-            <input type="text" id="currency" value="1">
+          <label for="currency">Enter Amount in USD</label>
+          <input type="text" id="currency" value="1" />
         </div>
         <div class="from">
-            <label for="result">FROM</label>
-            <div class="drpdwn">
+          <label for="result">FROM</label>
+          <div class="drpdwn">
             <div>
-                <img src="https://flagsapi.com/US/shiny/64.png">
+              <img src="https://flagsapi.com/US/shiny/64.png" />
             </div>
-           
-                    <select class="drp" name="drp">
-                    </select>
-            </div>
-        </div> 
-        <div class="to">
-            <label for="result">TO</label>
-            <div class="drpdwn">
-            <div>
-              <img src="https://flagsapi.com/IN/shiny/64.png">
-              </div>
-          
-                    <select class="drp2" name="drp2">
-                     
-                    </select>
-            </div>
-        </div> 
-        <div  style="display: flex;justify-content: center;" class="b">
-            <button id="convert">Convert</button>
+
+            <select class="drp" name="drp"></select>
+          </div>
         </div>
-        <div class="op">
-            Converted Amount is 83.93755697 INR
+        <div class="to">
+          <label for="result">TO</label>
+          <div class="drpdwn">
+            <div>
+              <img src="https://flagsapi.com/IN/shiny/64.png" />
             </div>
-        </div> 
+
+            <select class="drp2" name="drp2"></select>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center" class="b">
+          <button id="convert">Convert</button>
+        </div>
+        <div class="op">Converted Amount is 83.93755697 INR</div>
+      </div>
     </form>
 
-
-    <script src="codes.js">  </script>
-    <script src="app.js">  </script>
-</body>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
